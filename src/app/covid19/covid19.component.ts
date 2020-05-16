@@ -18,7 +18,7 @@ export class Covid19Component implements OnInit
   @ViewChild(MatPaginator, {static: true}) paginator: MatPaginator;
   @ViewChild(MatSort, {static: true}) sort: MatSort;
   ELEMENT_DATA :CountryReports[]
-  displayedColumns: string[] = ['country','cases','todayCases','deaths','todayDeaths','recovered','active','critical','tests'];
+  displayedColumns: string[] = ['country','cases','todayCases','deaths','todayDeaths','recovered','tests'];
   dataSource = new MatTableDataSource<CountryReports>(this.ELEMENT_DATA); 
   
   constructor(private service:JavatechieCovid19Service) { }

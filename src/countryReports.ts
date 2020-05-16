@@ -6,11 +6,8 @@ export interface CountryReports
     deaths:string;
     todayDeaths :string;
     recovered:number;
-    active:number;
-    critical:string;
- 
-   
     tests :string;
+    img :string;
     
 
 
